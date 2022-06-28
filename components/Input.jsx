@@ -18,6 +18,7 @@ import {
   import { userState } from "../atom/userAtom";
   import { signOut, getAuth } from "firebase/auth";
   export default function Input() {
+
     const [input, setInput] = useState("");
     const [currentUser, setCurrentUser] = useRecoilState(userState);
     const [selectedFile, setSelectedFile] = useState(null);
